@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { InfoTopBar } from "@/components/UI/InfoTopBar";
 import { NavBar } from "@/components/Navigation/NavBar";
 
 const inter = Inter({
@@ -21,10 +20,10 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`${inter.className} antialiased`}>
-        <InfoTopBar />
         <NavBar />
 
-        {children}
+        {/* Make changes in the future to make responsive work */}
+        <main className="py-8 px-32">{children}</main>
       </body>
     </html>
   );
