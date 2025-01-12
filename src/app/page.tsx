@@ -1,7 +1,11 @@
+import { BannerCarousel } from "@/components/UI/BannerCarousel";
+
 export default function Home() {
   return (
     <div>
-      <h1>Ecommerce</h1>
+      <div className="w-full h-[70vh] flex items-center justify-center">
+        <BannerCarousel />
+      </div>
     </div>
   );
 }
